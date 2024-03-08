@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+<h1>Travel reservation form</h1>
+<h2>* denotes mandatory</h2>
+<form action="tables.html" method="POST">
+    <fieldset>
+        <li>
+            <label for="firstlast">Full name*:</label> <br>
+            <input type="text" name="fullname" id="firstlast" placeholder="FirstName LastName">
+        </li>
+        <li>
+            <label for="email">Email address*:</label> <br>
+            <input type="text" name="email" id="email">
+        </li>
+        <li>
+            <label for="tourpackage">Select Tour Package*:</label> <br>
+            <select name="tourpackage" id="tourpackage">
+                <option value="Goa">Goa</option>
+                <option value="Capy">Capy</option>
+                <option value="Bara">Bara</option>
+                <option value="Capybara">Capybara</option>
+            </select>
+        </li>
+            <li>
+                <label for="arrivaldate">Arrival date*:</label> <br>
+                <input type="text" name="arrivaldate" id="arrivaldate" placeholder="m/d/y">
+            </li>
+            <li>
+                <label for="numberofpeople">Number of people*:</label> <br>
+                <input type="text" name="numberofpeople" id="numberofpeople">
+            </li>
+            <li> What would you like to avail?* <br>
+                <label>Boarding<input type="checkbox" name="boarding" id="boarding" value="Boarding"></label> <br>
+                <label>Fooding <input type="checkbox" name="fooding" id="fooding" value="Fooding"></label> <br>
+                <label>Sight seeing <input type="checkbox" name="sightseeing" id="sightseeing" value="Sight seeing"></label>
+            </li>
+            <li>
+                <label for="discountcode">Discount Coupon code:</label> <br>
+                <input type="text" name="discountcode" id="discountcode">
+            </li>
+            <li> Terms and conditions*: <br>
+                <label><input type="radio" name="radio" value="I agree" >I agree</label>
+                <label><input type="radio" name="radio" value="I disagree">I disagree</label>
+            </li>
+        <li>
+            <input type="submit" value="Complete reservation">
+        </li>
+
+    </fieldset>
+</form>
+</body>
+</html>
