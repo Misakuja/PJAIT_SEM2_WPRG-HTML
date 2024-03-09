@@ -6,28 +6,89 @@
 </head>
 <body>
 <form action="tables.html" method="POST">
+    <label for="title"><strong>Title</strong></label> <br>
+    <input type="text" name="title" id="title" required> <br>
+
+    <label for="date"><strong>Date</strong></label> <br>
+    <input type="date" name="date" id="date"> <br>
+    <label><textarea cols="5" name="comment">Date-only description.</textarea></label> <br>
+
     <fieldset>
-        <label for="title"><strong>Title</strong></label> <br>
-        <input type="text" name="title" id="title" required> <br>
+        <legend><strong>DATE/TIME</strong></legend>
+        <label for="dateTime1"></label> <br>
+        <input type="date" name="dateTime1" id="dateTime1">
 
-        <label for="date"><strong>Date</strong></label> <br>
-        <input type="date" name="date" id="date"> <br>
-        <label><textarea cols="5" name="comment">Date-only description.</textarea></label> <br>
+        <label for="dateTime2"></label>
+        <input type="time" name="dateTime2" id="dateTime2"> <br>
 
-        <label for="datetime"><strong>DATE/TIME:</strong></label> <br>
-        <input type="date" name="datetime1" id="datetime">
-        <input type="time"  name="datetime2" id="datetime2>"> <br>
         <label><textarea cols="5" name="comment2">Date and time description.</textarea></label> <br>
+    </fieldset>
+    <fieldset>
+        <legend><strong>DATE RANGE</strong></legend>
+        <label for="startDate"><strong>START DATE</strong></label> <br>
+        <input type="date" name="startDate" id="startDate">
 
-        <h3>DATE RANGE</h3>
-        <label for="startdate"><strong>START DATE</strong></label> <br>
-        <input type="date" name="startdate" id="startdate">
-        <input type="time"  name="starttime" id="starttime>"> <br>
+        <label for="startTime"></label>
+        <input type="time"  name="startTime" id="startTime"> <br>
 
-        <label for="startdate"><strong>END DATE</strong></label> <br>
-        <input type="date" name="enddate" id="enddate">
-        <input type="time"  name="endtime" id="endtime>"> <br>
+        <label for="endDate"><strong>END DATE</strong></label> <br>
+        <input type="date" name="endDate" id="endDate">
+
+        <label for="endTime"></label>
+        <input type="time"  name="endTime" id="endTime"> <br>
+        <label><textarea cols="5" name="comment">Date range description.</textarea></label> <br>
+    </fieldset>
+    <fieldset>
+        <legend><strong>DATE/TIME LIST</strong></legend>
+        <label for="dateYear"></label>
+        <select name="dateYear" id="dateYear">
+            <option value="" disabled selected>Year</option>
+            <script>
+                for (let i = 1950; i <= 2024; i++) {
+                    document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+            </script>
+        </select>
+        <label for="dateMonth"></label>
+        <select name="dateMonth" id="dateMonth">
+            <option value="" disabled selected>Month</option>
+            <script>
+                for (let i = 1; i <= 12; i++) {
+                    document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+            </script>
+        </select>
+        <label for="dateDay"></label>
+        <select name="dateDay" id="dateDay">
+            <option value="" disabled selected>Day</option>
+            <script>
+                for (let i = 1; i <= 31; i++) {
+                    document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+            </script>
+        </select>
+        <label for="dateHour"></label>
+        <select name="dateHour" id="dateHour">
+            <option value="" disabled selected>Hour</option>
+            <script>
+                for (let i = 1; i <= 24; i++) {
+                    document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+            </script>
+        </select>
+        <label for="dateMinute"></label>
+        <select name="dateMinute" id="dateMinute">
+            <option value="" disabled selected>Minute</option>
+            <script>
+                for (let i = 0; i <= 59; i++) {
+                    document.write("<option value='" + i + "'>" + i + "</option>");
+                }
+            </script>
+        </select>
+        <br>
+        <label><textarea cols="5" name="comment">Date / time list description.</textarea></label> <br>
     </fieldset>
 </form>
 </body>
 </html>
+
