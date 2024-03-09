@@ -6,41 +6,41 @@
 </head>
 <body>
 <form action="tables.html" method="POST">
-    <label for="title"><strong>Title</strong></label> <br>
-    <input type="text" name="title" id="title" required> <br>
+    <label for="title"><strong>Title</strong> <br>
+    <input type="text" name="title" id="title" required></label> <br>
 
-    <label for="date"><strong>Date</strong></label> <br>
-    <input type="date" name="date" id="date"> <br>
+    <label for="date"><strong>Date</strong>< <br>
+    <input type="date" name="date" id="date"></label> <br>
     <label><textarea cols="5" name="comment">Date-only description.</textarea></label> <br>
 
     <fieldset>
         <legend><strong>DATE/TIME</strong></legend>
-        <label for="dateTime1"></label> <br>
-        <input type="date" name="dateTime1" id="dateTime1">
+        <label for="dateTime1"> <br>
+        <input type="date" name="dateTime1" id="dateTime1"></label>
 
-        <label for="dateTime2"></label>
-        <input type="time" name="dateTime2" id="dateTime2"> <br>
+        <label for="dateTime2">
+        <input type="time" name="dateTime2" id="dateTime2"></label> <br>
 
         <label><textarea cols="5" name="comment2">Date and time description.</textarea></label> <br>
     </fieldset>
     <fieldset>
         <legend><strong>DATE RANGE</strong></legend>
-        <label for="startDate"><strong>START DATE</strong></label> <br>
-        <input type="date" name="startDate" id="startDate">
+        <label for="startDate"><strong>START DATE</strong> <br>
+        <input type="date" name="startDate" id="startDate"></label>
 
-        <label for="startTime"></label>
-        <input type="time"  name="startTime" id="startTime"> <br>
+        <label for="startTime">
+        <input type="time"  name="startTime" id="startTime"></label> <br>
 
-        <label for="endDate"><strong>END DATE</strong></label> <br>
-        <input type="date" name="endDate" id="endDate">
+        <label for="endDate"><strong>END DATE</strong> <br>
+        <input type="date" name="endDate" id="endDate"></label>
 
-        <label for="endTime"></label>
-        <input type="time"  name="endTime" id="endTime"> <br>
+        <label for="endTime">
+        <input type="time"  name="endTime" id="endTime"></label> <br>
         <label><textarea cols="5" name="comment">Date range description.</textarea></label> <br>
     </fieldset>
     <fieldset>
         <legend><strong>DATE/TIME LIST</strong></legend>
-        <label for="dateYear"></label>
+        <label for="dateYear">
         <select name="dateYear" id="dateYear">
             <option value="" disabled selected>Year</option>
             <script>
@@ -48,8 +48,8 @@
                     document.write("<option value='" + i + "'>" + i + "</option>");
                 }
             </script>
-        </select>
-        <label for="dateMonth"></label>
+        </select></label>
+        <label for="dateMonth">
         <select name="dateMonth" id="dateMonth">
             <option value="" disabled selected>Month</option>
             <script>
@@ -57,8 +57,8 @@
                     document.write("<option value='" + i + "'>" + i + "</option>");
                 }
             </script>
-        </select>
-        <label for="dateDay"></label>
+        </select></label>
+        <label for="dateDay">
         <select name="dateDay" id="dateDay">
             <option value="" disabled selected>Day</option>
             <script>
@@ -66,8 +66,8 @@
                     document.write("<option value='" + i + "'>" + i + "</option>");
                 }
             </script>
-        </select>
-        <label for="dateHour"></label>
+        </select></label>
+        <label for="dateHour">
         <select name="dateHour" id="dateHour">
             <option value="" disabled selected>Hour</option>
             <script>
@@ -75,8 +75,8 @@
                     document.write("<option value='" + i + "'>" + i + "</option>");
                 }
             </script>
-        </select>
-        <label for="dateMinute"></label>
+        </select></label>
+        <label for="dateMinute">
         <select name="dateMinute" id="dateMinute">
             <option value="" disabled selected>Minute</option>
             <script>
@@ -84,7 +84,7 @@
                     document.write("<option value='" + i + "'>" + i + "</option>");
                 }
             </script>
-        </select>
+        </select></label>
         <br>
         <label><textarea cols="5" name="comment">Date / time list description.</textarea></label> <br>
     </fieldset>
