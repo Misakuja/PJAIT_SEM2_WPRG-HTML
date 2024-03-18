@@ -13,7 +13,6 @@ header {
     background-image: url("https://freshleafuae.com/wp-content/uploads/2023/06/baby-carrots-with-leaves-4.png");
     background-repeat: repeat-x;
 }
-
 a {
     text-decoration: none;
 }
@@ -58,7 +57,6 @@ p.warning, sup {
     font-variant: small-caps;
     font-style: normal;
 }
-
 h2 + p {
     text-align: center;
     font-style: italic;
