@@ -14,20 +14,33 @@
     <form action="" method="POST" id="formID">
         <fieldset id="MainFieldset">
             <legend>Add Item</legend>
-            <ul>
-                <li><label><span>NAME</span>
-                <input type="text" id="name"> <br>
-                </label></li>
-                <li><label><span>DESCRIPTION</span>
-                <input type="text" id="desc"> <br>
-                </label></li>
-                <li><label><span>VALUE</span>
-                <input type="text" id="value"> <br>
-                </label></li>
-                <li><label for="save">
-                <input type="submit" id="save" value="SAVE">
-                </label></li>
-            </ul>
+            <div id="left">
+                <ul>
+                    <li><label><span>NAME</span>
+                    </label></li>
+                    <li><label><span>DESCRIPTION</span>
+                    </label></li>
+                    <li><label><span>VALUE</span>
+                    </label></li>
+                </ul>
+            </div>
+            <div id="right">
+                <ul>
+                    <li><label><input type="text" id="name"> <br>
+                    </label></li>
+                    <li><label><input type="text" id="desc"> <br>
+                    </label></li>
+                    <li><label><input type="text" id="value"> <br>
+                    </label></li>
+                </ul>
+            </div>
+            <div id="saveButton">
+                <ul>
+                    <li><label for="save">
+                        <input type="submit" id="save" value="SAVE">
+                    </label></li>
+                </ul>
+            </div>
         </fieldset>
     </form>
 </div>

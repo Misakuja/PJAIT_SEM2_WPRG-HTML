@@ -41,27 +41,31 @@ h1 {
 fieldset {
     border: 1px solid #bdbdbd;
 }
-.form:not[id='save'] {
+#left {
     float: left;
-}
-.form label span {
+    width: 25%;
+    border: none;
+    text-align: right;
     color: #4d4344;
     margin-right: 10px;
 }
-.form input[type="text"] {
-    border: 1px solid #bdbdbd;
+#right {
     text-align: left;
-    width: 50%;
+    width: 75%;
+    height: 70px;
+    border: none;
+}
+#saveButton {
+    float: right;
 }
 .form input[type="submit"] {
     text-align: center;
     border: 1px solid #c4beb6;
     background-color: #c4beb6;
     color: #ffffff;
-    float: right;
     font-size: 15px;
     font-weight: bold;
-    padding: 10px 25px 10px 25px;
+    padding: 8px 23px 8px 23px;
 }
 .form input[type="submit"]:active {
     background-color: #3a3131;
